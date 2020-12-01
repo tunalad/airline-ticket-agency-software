@@ -1,0 +1,138 @@
+object Form3: TForm3
+  Left = 726
+  Top = 127
+  Width = 363
+  Height = 335
+  Caption = 'Karta'
+  Color = clActiveCaption
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 57
+    Top = 15
+    Width = 86
+    Height = 24
+    Caption = 'Broj Karte:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 39
+    Top = 47
+    Width = 104
+    Height = 24
+    Caption = 'Broj Sedišta:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 65
+    Top = 79
+    Width = 78
+    Height = 24
+    Caption = 'Broj Leta:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 286
+    Top = 80
+    Width = 23
+    Height = 22
+    OnClick = SpeedButton1Click
+  end
+  object DBRadioGroup1: TDBRadioGroup
+    Left = 81
+    Top = 128
+    Width = 185
+    Height = 105
+    Caption = 'Tip Karte'
+    DataField = 'TipKarte'
+    DataSource = Form1.DataSource2
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    Items.Strings = (
+      'First Class'
+      'Business Class'
+      'Economy Class')
+    ParentFont = False
+    TabOrder = 0
+  end
+  object BitBtn1: TBitBtn
+    Left = 76
+    Top = 256
+    Width = 75
+    Height = 25
+    TabOrder = 1
+    OnClick = BitBtn1Click
+    Kind = bkOK
+  end
+  object DBEdit1: TDBEdit
+    Left = 155
+    Top = 17
+    Width = 153
+    Height = 21
+    DataField = 'BrKarte'
+    DataSource = Form1.DataSource2
+    TabOrder = 2
+  end
+  object DBEdit2: TDBEdit
+    Left = 155
+    Top = 49
+    Width = 153
+    Height = 21
+    DataField = 'Sedište'
+    DataSource = Form1.DataSource2
+    TabOrder = 3
+  end
+  object DBComboBox1: TDBComboBox
+    Left = 155
+    Top = 81
+    Width = 121
+    Height = 21
+    DataField = 'IDLet'
+    DataSource = Form1.DataSource2
+    ItemHeight = 13
+    Items.Strings = (
+      '1'
+      '2'
+      '3'
+      '4'
+      '5'
+      '6'
+      '7'
+      '8'
+      '9')
+    TabOrder = 4
+  end
+  object BitBtn2: TBitBtn
+    Left = 196
+    Top = 256
+    Width = 75
+    Height = 25
+    TabOrder = 5
+    OnClick = BitBtn2Click
+    Kind = bkCancel
+  end
+end
